@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BSK</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="text1">In 2020 International Women\'s Day</string>
+    <string name="text2">celebrated globally on 8th March\nwill highliht the
+    </string>
+    <string name="text3">In 2020 International Women\'s Day\ncelebrated globally on 8th March\nwill highlighted the</string>
+    <string name="text"> Address: Bosco Seva Kendra, Himayatsagar Road, Don Bosco Nagar post, Kalimandir, Bandlaguda Jagir, Hyderabad, Telangana 500086, INDIA
+</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

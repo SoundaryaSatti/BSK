@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--the shadow comes from here-->
+    <item
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp">
+        <!--whatever you want in the background, here i preferred solid white -->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+            <gradient
+                android:centerX="78%"
+                android:startColor="#01f4f3f3"
+                android:centerColor="#73ffffff"
+                android:endColor="#267167"
+                android:angle="270"/>
+        </shape>
+    </item>
+</layer-list>
