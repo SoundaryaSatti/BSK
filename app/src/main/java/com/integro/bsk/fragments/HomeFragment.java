@@ -48,7 +48,7 @@ import static androidx.constraintlayout.widget.Constraints.TAG;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
     TextView tvAboutUs, tvActivities, tvVolunteer, tvNewsLetter, tvCalender, tvNewsEvents, tvPolicies, tvCollaborations, tvWwd, tvSupportUs, tvWebSite, tvdonate;
-
+     ImageView ivVolImage;
 
     private ApiServices apiServices;
     private AutoScrollViewPager vpImages;
@@ -80,6 +80,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         tvWebSite = view.findViewById(R.id.tv_Website);
         tvdonate = view.findViewById(R.id.tv_Donate);
         tvNewsEvents = view.findViewById(R.id.tv_News_Events);
+        ivVolImage=view.findViewById(R.id.iv_VolImage);
 
         tvPolicies.setOnClickListener(this);
         tvNewsLetter.setOnClickListener(this);
@@ -93,6 +94,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         tvdonate.setOnClickListener(this);
         tvWebSite.setOnClickListener(this);
         tvNewsEvents.setOnClickListener(this);
+        ivVolImage.setOnClickListener(this);
         getNewsList();
         return view;
     }
@@ -121,6 +123,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.tv_Donate:
                 Toast.makeText(getContext(), "Coming Soon", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.iv_VolImage:
+                Intent intentVolImage=new Intent(getContext(),VolunteerActivity.class);
+                startActivity(intentVolImage);
                 break;
             case R.id.tv_Website:
                  Intent intentWeb=new Intent(Intent.ACTION_VIEW);

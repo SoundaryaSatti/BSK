@@ -25,7 +25,7 @@
                 android:paddingRight="60dp"
                 android:fontFamily="@font/ramarajaregular"
                 android:gravity="center"
-                android:text="BOSCOSEVAKENDRA"
+                android:text="BOSCO SEVA KENDRA"
                 android:textColor="@color/colorWhite"
                 android:textSize="21sp" />
 

@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
@@ -45,10 +46,12 @@ public class ImageViewPagerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
         ImageView ivImage;
+        TextView tvTitle,tvDescription;
          News news=newsArrayList.get(position);
         View view = LayoutInflater.from(context).inflate(R.layout.card_vp_images, container, false);
 
         ivImage = view.findViewById(R.id.vp_ImageH);
+        tvTitle=view.findViewById(R.id.vp_title);
         /*String url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSppVj8MavDX1f4O-Cx_VKoOsdIrKoQNxPNjkvzh_kxPSVCogu02W1OzMG-XA&s=10";
         Glide.with(context)
                 .load(url)
@@ -61,7 +64,8 @@ public class ImageViewPagerAdapter extends PagerAdapter {
                         .placeholder(R.drawable.rescuedchildren)
                         .error(R.drawable.rescuedchildren))
                 .into(ivImage);*/
-          Glide.with(context).load(newsArrayList.get(position).getImage()).into(ivImage);
+        tvTitle.setText(newsArrayList.get(position).getTitle());
+        Glide.with(context).load(newsArrayList.get(position).getImage()).into(ivImage);
 
         ivImage.setOnClickListener(new View.OnClickListener() {
             @Override
